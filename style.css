@@ -76,10 +76,14 @@ body {
   background-image: url("assets/images/banner.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: center; }
+  @media screen and (max-width: 1400px) {
+    .banner {
+      background-size: cover;
+      background-position: -40px; } }
   @media screen and (max-width: 1280px) {
     .banner {
       background-size: cover;
@@ -157,22 +161,13 @@ body {
       height: 39px;
       background-image: url("assets/images/banner-bottom-shape.png");
       position: absolute;
-      bottom: 1px;
+      bottom: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 19px;
       color: #000;
       font-family: "DIN Pro Bold"; }
-      @media screen and (max-width: 1280px) {
-        .banner .grid .bottom-shape {
-          bottom: 0; } }
-      @media screen and (max-width: 768px) {
-        .banner .grid .bottom-shape {
-          bottom: 0; } }
-      @media screen and (max-width: 1024px) {
-        .banner .grid .bottom-shape {
-          bottom: 0; } }
       @media screen and (max-width: 480px) {
         .banner .grid .bottom-shape {
           width: 100%;
@@ -222,6 +217,9 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between; }
+        @media screen and (max-width: 1400px) {
+          #main-content .wrapper-background .grid .cars {
+            margin-top: 40px; } }
         @media screen and (max-width: 1024px) {
           #main-content .wrapper-background .grid .cars {
             margin-top: 40px; } }
@@ -278,7 +276,7 @@ body {
             @media screen and (max-width: 768px) {
               #main-content .wrapper-background .grid .cars .car-item p {
                 min-height: 34px; } }
-          #main-content .wrapper-background .grid .cars .car-item a {
+          #main-content .wrapper-background .grid .cars .car-item .select-car {
             text-decoration: none;
             background: #efb800;
             margin-top: 20px;
@@ -293,9 +291,14 @@ body {
             font-size: 11px;
             border-radius: 4px;
             letter-spacing: 1px; }
+            #main-content .wrapper-background .grid .cars .car-item .select-car.selected {
+              background: #bf960f; }
       #main-content .wrapper-background .grid #form-register {
         width: 100%;
         margin-top: 120px; }
+        @media screen and (max-width: 1400px) {
+          #main-content .wrapper-background .grid #form-register {
+            margin-top: 80px; } }
         @media screen and (max-width: 1024px) {
           #main-content .wrapper-background .grid #form-register {
             margin-top: 80px; } }
@@ -341,6 +344,9 @@ body {
           flex-direction: row;
           justify-content: center;
           align-items: center; }
+          @media screen and (max-width: 1400px) {
+            #main-content .wrapper-background .grid #form-register .row-info-label {
+              margin-top: 70px; } }
           @media screen and (max-width: 1024px) {
             #main-content .wrapper-background .grid #form-register .row-info-label {
               margin-top: 70px; } }

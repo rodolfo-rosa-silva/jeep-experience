@@ -35,6 +35,9 @@
         flex-direction: row;
         justify-content: space-between;
 
+        @media screen and (max-width: 1400px) {
+          margin-top: 40px;
+        }
         @media screen and (max-width: 1024px) {
           margin-top: 40px;
         }
@@ -103,7 +106,7 @@
               min-height: 34px;
             }
           }
-          a {
+          .select-car {
             text-decoration: none;
             background: #efb800;
             margin-top: 20px;
@@ -118,6 +121,10 @@
             font-size: 11px;
             border-radius: 4px;
             letter-spacing: 1px;
+
+            &.selected {
+              background: #bf960f;
+            }
           }
         }
       }
@@ -125,6 +132,9 @@
         width: 100%;
         margin-top: 120px;
 
+        @media screen and (max-width: 1400px) {
+          margin-top: 80px;
+        }
         @media screen and (max-width: 1024px) {
           margin-top: 80px;
         }
@@ -177,6 +187,9 @@
           justify-content: center;
           align-items: center;
 
+          @media screen and (max-width: 1400px) {
+            margin-top: 70px;
+          }
           @media screen and (max-width: 1024px) {
             margin-top: 70px;
           }

@@ -11,6 +11,11 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="/assets/fonts/style.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-3.4.0.min.js"></script>
+
+    <!-- Faz o preenchimento do campo car_id baseado no click dos botoes "selecione" -->
+    <script src="js/select-car.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -70,7 +75,7 @@
                 Fabricado no Brasil <br />
                 para você fazer história.
               </p>
-              <a href="#">SELECIONAR</a>
+              <a href="#" class="select-car" data-car-id="1">SELECIONAR</a>
             </div>
             <div class="car-item divisor">
               <img src="assets/images/compass.png" alt="Compass" />
@@ -79,16 +84,17 @@
                 Design, performance, <br />
                 tecnologia e sofisticação.
               </p>
-              <a href="#">SELECIONAR</a>
+              <a href="#" class="select-car" data-car-id="2">SELECIONAR</a>
             </div>
             <div class="car-item">
               <img src="assets/images/wrangler.png" alt="Wrangler" />
               <h3>WRANGLER SAHARA</h3>
               <p>O combustível para sua aventura.</p>
-              <a href="#">SELECIONAR</a>
+              <a href="#" class="select-car" data-car-id="3">SELECIONAR</a>
             </div>
           </div>
           <form action="" id="form-register">
+            <input type="hidden" name="car_id" class="car_id" />
             <div class="row-datetime">
               <select name="date">
                 <option value="">ESCOLHA A DATA</option>
