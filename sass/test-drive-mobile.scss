@@ -1,0 +1,48 @@
+.test-drive-mobile {
+  background: #000;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  h2 {
+    color: #fff;
+    font-family: "DIN Pro Bold";
+    font-size: 22px;
+
+    .divisor {
+      color: #efb800;
+      font-family: "DIN Pro Light";
+    }
+    .territory {
+      font-size: 18px;
+    }
+  }
+
+  h3 {
+    color: #fff;
+    margin-top: 15px;
+    font-family: "DIN Pro Light";
+
+    strong {
+      font-family: "DIN Pro Bold";
+    }
+  }
+
+  p {
+    font-family: "DIN Pro Light";
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+}

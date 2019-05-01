@@ -1,0 +1,17 @@
+#main-footer {
+  background: #353535;
+  color: #fff;
+  height: 45px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DIN Pro Light";
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}

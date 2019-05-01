@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0; }
+
+body {
+  background: #ffffff;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-family: "DIN Pro Condensed Regular";
+  height: 100%; }
+
+.grid {
+  width: 1200px; }
+  @media screen and (max-width: 1024px) {
+    .grid {
+      width: 980px; } }
+  @media screen and (max-width: 768px) {
+    .grid {
+      width: 728px; } }
+  @media screen and (max-width: 480px) {
+    .grid {
+      width: 100%; } }
+
+#main-header {
+  display: flex;
+  height: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; }
+  @media screen and (max-width: 480px) {
+    #main-header .logo {
+      width: 150px; }
+    #main-header .header-form {
+      width: 40px; } }
+
+.test-drive-mobile {
+  background: #000;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 480px) {
+    .test-drive-mobile {
+      display: flex; } }
+  .test-drive-mobile img {
+    width: 200px; }
+  .test-drive-mobile h2 {
+    color: #fff;
+    font-family: "DIN Pro Bold";
+    font-size: 22px; }
+    .test-drive-mobile h2 .divisor {
+      color: #efb800;
+      font-family: "DIN Pro Light"; }
+    .test-drive-mobile h2 .territory {
+      font-size: 18px; }
+  .test-drive-mobile h3 {
+    color: #fff;
+    margin-top: 15px;
+    font-family: "DIN Pro Light"; }
+    .test-drive-mobile h3 strong {
+      font-family: "DIN Pro Bold"; }
+  .test-drive-mobile p {
+    font-family: "DIN Pro Light";
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center; }
+
+.banner {
+  height: 666px;
+  background-image: url("assets/images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  @media screen and (max-width: 1280px) {
+    .banner {
+      background-size: cover;
+      background-position: -40px; } }
+  @media screen and (max-width: 1024px) {
+    .banner {
+      height: 400px;
+      background-size: cover;
+      background-position: 0; } }
+  @media screen and (max-width: 768px) {
+    .banner {
+      height: 400px;
+      background-size: cover;
+      background-position: 0; } }
+  @media screen and (max-width: 480px) {
+    .banner {
+      height: 200px;
+      background-size: cover;
+      background-position: 0; } }
+  @media screen and (max-width: 320px) {
+    .banner {
+      height: 200px;
+      background-size: cover;
+      background-position: -30px 0; } }
+  .banner .grid {
+    height: 666px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    @media screen and (max-width: 1024px) {
+      .banner .grid {
+        height: 400px; } }
+    @media screen and (max-width: 768px) {
+      .banner .grid {
+        height: 400px; } }
+    @media screen and (max-width: 480px) {
+      .banner .grid {
+        height: 200px;
+        display: none; } }
+    @media screen and (max-width: 320px) {
+      .banner .grid {
+        height: 200px;
+        display: none; } }
+    .banner .grid .banner-info {
+      position: absolute;
+      right: 0; }
+      @media screen and (max-width: 1024px) {
+        .banner .grid .banner-info img {
+          width: 300px; } }
+      @media screen and (max-width: 768px) {
+        .banner .grid .banner-info img {
+          width: 300px; } }
+      .banner .grid .banner-info p {
+        width: 470px;
+        font-family: "DIN Pro Light";
+        color: #fff;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 28px; }
+        @media screen and (max-width: 1024px) {
+          .banner .grid .banner-info p {
+            width: 300px;
+            font-size: 14px; } }
+        @media screen and (max-width: 768px) {
+          .banner .grid .banner-info p {
+            width: 300px;
+            font-size: 14px; } }
+    .banner .grid .bottom-shape {
+      width: 353px;
+      height: 39px;
+      background-image: url("assets/images/banner-bottom-shape.png");
+      position: absolute;
+      bottom: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 19px;
+      color: #000;
+      font-family: "DIN Pro Bold"; }
+      @media screen and (max-width: 1280px) {
+        .banner .grid .bottom-shape {
+          bottom: 0; } }
+      @media screen and (max-width: 768px) {
+        .banner .grid .bottom-shape {
+          bottom: 0; } }
+      @media screen and (max-width: 1024px) {
+        .banner .grid .bottom-shape {
+          bottom: 0; } }
+
+#main-content {
+  background-image: url("assets/images/content-background.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  #main-content .wrapper-background {
+    background: #fff;
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    @media screen and (max-width: 1024px) {
+      #main-content .wrapper-background {
+        width: 1000px; } }
+    @media screen and (max-width: 768px) {
+      #main-content .wrapper-background {
+        width: 748px; } }
+    @media screen and (max-width: 480px) {
+      #main-content .wrapper-background {
+        width: 100%; } }
+    #main-content .wrapper-background .grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #main-content .wrapper-background .grid .cars {
+        width: 100%;
+        margin-top: 125px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        @media screen and (max-width: 1024px) {
+          #main-content .wrapper-background .grid .cars {
+            margin-top: 40px; } }
+        @media screen and (max-width: 768px) {
+          #main-content .wrapper-background .grid .cars {
+            margin-top: 40px; } }
+        @media screen and (max-width: 480px) {
+          #main-content .wrapper-background .grid .cars {
+            margin-top: 0;
+            flex-direction: column;
+            justify-content: center; } }
+        #main-content .wrapper-background .grid .cars .car-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          @media screen and (max-width: 480px) {
+            #main-content .wrapper-background .grid .cars .car-item {
+              margin-bottom: 20px; } }
+          #main-content .wrapper-background .grid .cars .car-item.divisor {
+            background-image: url(assets/images/car-item-divisor.png);
+            background-position: 0 70%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0 80px; }
+            @media screen and (max-width: 768px) {
+              #main-content .wrapper-background .grid .cars .car-item.divisor {
+                background-image: none;
+                padding: 0; } }
+            @media screen and (max-width: 480px) {
+              #main-content .wrapper-background .grid .cars .car-item.divisor {
+                background-image: none;
+                padding: 0; } }
+          @media screen and (max-width: 1024px) {
+            #main-content .wrapper-background .grid .cars .car-item img {
+              width: 220px; } }
+          @media screen and (max-width: 768px) {
+            #main-content .wrapper-background .grid .cars .car-item img {
+              width: 200px; } }
+          #main-content .wrapper-background .grid .cars .car-item h3 {
+            font-size: 17px;
+            font-family: "DIN Pro Bold";
+            margin-top: 20px; }
+          #main-content .wrapper-background .grid .cars .car-item p {
+            margin-top: 15px;
+            color: #333;
+            font-size: 14px;
+            font-family: "DIN Pro Medium"; }
+            @media screen and (max-width: 1280px) {
+              #main-content .wrapper-background .grid .cars .car-item p {
+                min-height: 34px; } }
+            @media screen and (max-width: 1024px) {
+              #main-content .wrapper-background .grid .cars .car-item p {
+                min-height: 34px; } }
+            @media screen and (max-width: 768px) {
+              #main-content .wrapper-background .grid .cars .car-item p {
+                min-height: 34px; } }
+          #main-content .wrapper-background .grid .cars .car-item a {
+            text-decoration: none;
+            background: #efb800;
+            margin-top: 20px;
+            padding: 7px 20px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+            font-family: "DIN Pro Bold";
+            font-size: 11px;
+            border-radius: 4px;
+            letter-spacing: 1px; }
+      #main-content .wrapper-background .grid #form-register {
+        width: 100%;
+        margin-top: 120px; }
+        @media screen and (max-width: 1024px) {
+          #main-content .wrapper-background .grid #form-register {
+            margin-top: 80px; } }
+        @media screen and (max-width: 768px) {
+          #main-content .wrapper-background .grid #form-register {
+            margin-top: 80px; } }
+        @media screen and (max-width: 480px) {
+          #main-content .wrapper-background .grid #form-register {
+            margin-top: 50px; } }
+        #main-content .wrapper-background .grid #form-register .row-datetime {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%; }
+          @media screen and (max-width: 480px) {
+            #main-content .wrapper-background .grid #form-register .row-datetime {
+              flex-direction: column;
+              justify-content: center;
+              padding: 0 20px; } }
+          #main-content .wrapper-background .grid #form-register .row-datetime select {
+            background: #efb800;
+            color: #000;
+            font-family: "DIN Pro Bold";
+            font-size: 18px;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 570px;
+            border: 1px solid #000; }
+            @media screen and (max-width: 1024px) {
+              #main-content .wrapper-background .grid #form-register .row-datetime select {
+                width: 450px; } }
+            @media screen and (max-width: 768px) {
+              #main-content .wrapper-background .grid #form-register .row-datetime select {
+                width: 350px; } }
+            @media screen and (max-width: 480px) {
+              #main-content .wrapper-background .grid #form-register .row-datetime select {
+                width: 100%;
+                margin-bottom: 20px; } }
+        #main-content .wrapper-background .grid #form-register .row-info-label {
+          width: 100%;
+          margin-top: 115px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          @media screen and (max-width: 1024px) {
+            #main-content .wrapper-background .grid #form-register .row-info-label {
+              margin-top: 70px; } }
+          @media screen and (max-width: 768px) {
+            #main-content .wrapper-background .grid #form-register .row-info-label {
+              margin-top: 50px; } }
+          @media screen and (max-width: 480px) {
+            #main-content .wrapper-background .grid #form-register .row-info-label {
+              margin-top: 50px; } }
+          @media screen and (max-width: 480px) {
+            #main-content .wrapper-background .grid #form-register .row-info-label img {
+              width: 70px; } }
+          #main-content .wrapper-background .grid #form-register .row-info-label span {
+            font-size: 35px;
+            color: #000;
+            font-family: "DIN Pro Bold";
+            margin-left: 20px;
+            letter-spacing: 2px; }
+            @media screen and (max-width: 480px) {
+              #main-content .wrapper-background .grid #form-register .row-info-label span {
+                font-size: 25px; } }
+        #main-content .wrapper-background .grid #form-register .box-fields {
+          margin-top: 60px;
+          display: flex;
+          flex-direction: column; }
+          #main-content .wrapper-background .grid #form-register .box-fields .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 30px; }
+            @media screen and (max-width: 480px) {
+              #main-content .wrapper-background .grid #form-register .box-fields .row {
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 20px;
+                margin-bottom: 0; } }
+            #main-content .wrapper-background .grid #form-register .box-fields .row.one input[type="text"],
+            #main-content .wrapper-background .grid #form-register .box-fields .row.one select, #main-content .wrapper-background .grid #form-register .box-fields .row.two input[type="text"],
+            #main-content .wrapper-background .grid #form-register .box-fields .row.two select {
+              width: 30%; }
+              @media screen and (max-width: 480px) {
+                #main-content .wrapper-background .grid #form-register .box-fields .row.one input[type="text"],
+                #main-content .wrapper-background .grid #form-register .box-fields .row.one select, #main-content .wrapper-background .grid #form-register .box-fields .row.two input[type="text"],
+                #main-content .wrapper-background .grid #form-register .box-fields .row.two select {
+                  width: 100%;
+                  margin-bottom: 20px; } }
+            #main-content .wrapper-background .grid #form-register .box-fields .row.three input[type="text"],
+            #main-content .wrapper-background .grid #form-register .box-fields .row.three select {
+              width: 100%; }
+            #main-content .wrapper-background .grid #form-register .box-fields .row input[type="text"],
+            #main-content .wrapper-background .grid #form-register .box-fields .row select {
+              background: #d6d6d6;
+              border: 1px solid #6f6f6f;
+              color: #000;
+              font-family: "DIN Pro Bold";
+              font-size: 18px;
+              border-radius: 5px;
+              padding: 5px 10px;
+              color: #404040; }
+              #main-content .wrapper-background .grid #form-register .box-fields .row input[type="text"]::placeholder,
+              #main-content .wrapper-background .grid #form-register .box-fields .row select::placeholder {
+                color: #404040; }
+              #main-content .wrapper-background .grid #form-register .box-fields .row input[type="text"] option,
+              #main-content .wrapper-background .grid #form-register .box-fields .row select option {
+                color: #404040; }
+          #main-content .wrapper-background .grid #form-register .box-fields .row-terms {
+            margin-bottom: 75px;
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
+            @media screen and (max-width: 480px) {
+              #main-content .wrapper-background .grid #form-register .box-fields .row-terms {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 20px;
+                margin-top: 20px;
+                margin-bottom: 20px; } }
+            @media screen and (max-width: 480px) {
+              #main-content .wrapper-background .grid #form-register .box-fields .row-terms .col {
+                margin-bottom: 20px; } }
+            #main-content .wrapper-background .grid #form-register .box-fields .row-terms .col label {
+              text-transform: uppercase;
+              font-size: 16px;
+              color: #737373;
+              font-family: "DIN Pro Bold";
+              margin-left: 15px;
+              margin-right: 30px; }
+              @media screen and (max-width: 768px) {
+                #main-content .wrapper-background .grid #form-register .box-fields .row-terms .col label {
+                  font-size: 14px; } }
+              @media screen and (max-width: 480px) {
+                #main-content .wrapper-background .grid #form-register .box-fields .row-terms .col label {
+                  font-size: 12px;
+                  margin-right: 0; } }
+          #main-content .wrapper-background .grid #form-register .box-fields .row-submit {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; }
+            #main-content .wrapper-background .grid #form-register .box-fields .row-submit button {
+              background: #efb800;
+              color: #000;
+              text-transform: uppercase;
+              font-size: 20px;
+              padding: 10px 50px;
+              border-radius: 4px;
+              font-family: "DIN Pro Bold";
+              cursor: pointer; }
+      #main-content .wrapper-background .grid .terms {
+        margin-top: 65px;
+        font-family: "DIN Pro Light";
+        font-size: 14px;
+        line-height: 19px;
+        color: #929292; }
+        @media screen and (max-width: 480px) {
+          #main-content .wrapper-background .grid .terms {
+            margin-top: 30px;
+            padding: 0 20px; } }
+      #main-content .wrapper-background .grid .location {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        color: #737373;
+        font-size: 16px;
+        font-family: "DIN Pro Bold"; }
+        @media screen and (max-width: 768px) {
+          #main-content .wrapper-background .grid .location {
+            text-align: center;
+            font-size: 14px; } }
+        @media screen and (max-width: 480px) {
+          #main-content .wrapper-background .grid .location {
+            padding: 0 20px;
+            text-align: center;
+            font-size: 14px; } }
+
+#main-footer {
+  background: #353535;
+  color: #fff;
+  height: 45px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DIN Pro Light"; }
+  @media screen and (max-width: 480px) {
+    #main-footer {
+      font-size: 12px;
+      text-align: center;
+      padding: 0 20px; } }
+
+/*# sourceMappingURL=style.css.map */

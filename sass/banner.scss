@@ -1,0 +1,113 @@
+.banner {
+  height: 666px;
+  background-image: url("assets/images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media screen and (max-width: 1280px) {
+    background-size: cover;
+    background-position: -40px;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 400px;
+    background-size: cover;
+    background-position: 0;
+  }
+  @media screen and (max-width: 768px) {
+    height: 400px;
+    background-size: cover;
+    background-position: 0;
+  }
+  @media screen and (max-width: 480px) {
+    height: 200px;
+    background-size: cover;
+    background-position: 0;
+  }
+  @media screen and (max-width: 320px) {
+    height: 200px;
+    background-size: cover;
+    background-position: -30px 0;
+  }
+
+  .grid {
+    height: 666px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media screen and (max-width: 1024px) {
+      height: 400px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 400px;
+    }
+    @media screen and (max-width: 480px) {
+      height: 200px;
+      display: none;
+    }
+    @media screen and (max-width: 320px) {
+      height: 200px;
+      display: none;
+    }
+
+    .banner-info {
+      position: absolute;
+      right: 0;
+
+      img {
+        @media screen and (max-width: 1024px) {
+          width: 300px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 300px;
+        }
+      }
+
+      p {
+        width: 470px;
+        font-family: "DIN Pro Light";
+        color: #fff;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 28px;
+
+        @media screen and (max-width: 1024px) {
+          width: 300px;
+          font-size: 14px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 300px;
+          font-size: 14px;
+        }
+      }
+    }
+    .bottom-shape {
+      width: 353px;
+      height: 39px;
+      background-image: url("assets/images/banner-bottom-shape.png");
+      position: absolute;
+      bottom: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 19px;
+      color: #000;
+      font-family: "DIN Pro Bold";
+
+      @media screen and (max-width: 1280px) {
+        bottom: 0;
+      }
+      @media screen and (max-width: 768px) {
+        bottom: 0;
+      }
+      @media screen and (max-width: 1024px) {
+        bottom: 0;
+      }
+    }
+  }
+}
