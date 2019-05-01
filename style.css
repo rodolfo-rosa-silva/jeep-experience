@@ -118,15 +118,19 @@ body {
         height: 400px; } }
     @media screen and (max-width: 480px) {
       .banner .grid {
-        height: 200px;
-        display: none; } }
+        height: 200px; } }
     @media screen and (max-width: 320px) {
       .banner .grid {
-        height: 200px;
-        display: none; } }
+        height: 200px; } }
     .banner .grid .banner-info {
       position: absolute;
       right: 0; }
+      @media screen and (max-width: 480px) {
+        .banner .grid .banner-info {
+          display: none; } }
+      @media screen and (max-width: 320px) {
+        .banner .grid .banner-info {
+          display: none; } }
       @media screen and (max-width: 1024px) {
         .banner .grid .banner-info img {
           width: 300px; } }
@@ -169,6 +173,22 @@ body {
       @media screen and (max-width: 1024px) {
         .banner .grid .bottom-shape {
           bottom: 0; } }
+      @media screen and (max-width: 480px) {
+        .banner .grid .bottom-shape {
+          width: 100%;
+          height: 30px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          font-size: 15px; } }
+      @media screen and (max-width: 320px) {
+        .banner .grid .bottom-shape {
+          width: 100%;
+          height: 30px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          font-size: 15px; } }
 
 #main-content {
   background-image: url("assets/images/content-background.png");
@@ -434,7 +454,7 @@ body {
         font-family: "DIN Pro Light";
         font-size: 14px;
         line-height: 19px;
-        color: #929292; }
+        color: #737373; }
         @media screen and (max-width: 480px) {
           #main-content .wrapper-background .grid .terms {
             margin-top: 30px;

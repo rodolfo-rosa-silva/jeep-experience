@@ -48,16 +48,21 @@
     }
     @media screen and (max-width: 480px) {
       height: 200px;
-      display: none;
     }
     @media screen and (max-width: 320px) {
       height: 200px;
-      display: none;
     }
 
     .banner-info {
       position: absolute;
       right: 0;
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+      @media screen and (max-width: 320px) {
+        display: none;
+      }
 
       img {
         @media screen and (max-width: 1024px) {
@@ -107,6 +112,22 @@
       }
       @media screen and (max-width: 1024px) {
         bottom: 0;
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 15px;
+      }
+      @media screen and (max-width: 320px) {
+        width: 100%;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 15px;
       }
     }
   }
